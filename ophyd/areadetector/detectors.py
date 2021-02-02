@@ -212,13 +212,3 @@ class Xspress3Detector(DetectorBase):
     _html_docs = ['Xspress3Doc.html']
     cam = C(cam.Xspress3DetectorCam, 'det1:')
 
-    external_trig = C(Signal, value=False,
-                        doc='Use external triggering')
-    total_points = C(Signal, value=-1,
-                       doc='The total number of points to acquire overall')
-    spectra_per_point = C(Signal, value=1,
-                            doc='Number of spectra per point')
-    make_directories = C(Signal, value=False,
-                           doc='Make directories on the DAQ side')
-    rewindable = C(Signal, value=False,
-                     doc='Xspress3 cannot safely be rewound in bluesky')
